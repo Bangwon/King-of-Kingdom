@@ -1137,7 +1137,7 @@ def fieldgate(x1, x2, y1, y2):
     pag.click(random.uniform(300+640+640, 330+640+640), random.uniform(215+397, 235+397), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #절전 모드
-ig
+
 def gotodesktop2():
     pag.click(402, 1052, 1, 0.2)
     time.sleep(4)
@@ -1148,6 +1148,7 @@ def gotodesktop1():
     time.sleep(4)
     pag.click(83, 45, 1, 0.2)
 
+#변경내용 작성
 
 # dailygate(580, 610, 200, 230)
 dailygate(450, 500, 200, 230)
