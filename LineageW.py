@@ -19,7 +19,7 @@ def rewardget():
     pag.click(random.uniform(579, 587), random.uniform(230, 238), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #우편
-    pag.click(random.uniform(339, 390), random.uniform(367, 372), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(339, 385), random.uniform(367, 372), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #모두 받기
     pag.click(random.uniform(280, 350), random.uniform(290, 295), 1, random.uniform(0.1, 0.3))
@@ -242,11 +242,11 @@ def dailycheck():
     pag.click(random.uniform(540, 545),random.uniform(145, 155), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #출석
-    pag.click(random.uniform(525, 595),random.uniform(350, 360), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(550, 580),random.uniform(220, 230), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
-    #데일리 출석 체크 혜택 받기
-    pag.moveTo(85, 300)
-    pag.drag(0, -250, 1.5)
+    #출석 체크 시즌4
+    pag.moveTo(85, 385)
+    pag.drag(0, -650, 1.5)
     time.sleep(random.uniform(3.5, 4.5))
     #출석 스크롤 다운
     pag.click(random.uniform(525, 595),random.uniform(230, 240), 1, random.uniform(0.1, 0.3))
@@ -277,11 +277,11 @@ def dailycheck():
     pag.click(random.uniform(540+640, 545+640),random.uniform(145, 155), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #출석
-    pag.click(random.uniform(525+640, 595+640),random.uniform(350, 360), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(550+640, 580+640),random.uniform(220, 230), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
-    #데일리 출석 체크 혜택 받기
-    pag.moveTo(85+640, 300)
-    pag.drag(0, -250, 1.5)
+    #출석 체크 시즌4
+    pag.moveTo(85+640, 385)
+    pag.drag(0, -650, 1.5)
     time.sleep(random.uniform(3.5, 4.5))
     #출석 스크롤 다운
     pag.click(random.uniform(525+640, 595+640),random.uniform(230, 240), 1, random.uniform(0.1, 0.3))
@@ -312,11 +312,11 @@ def dailycheck():
     pag.click(random.uniform(540+640+640, 545+640+640),random.uniform(145, 155), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #출석
-    pag.click(random.uniform(525+640+640, 595+640+640),random.uniform(350, 360), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(550+640+640, 580+640+640),random.uniform(220, 230), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
-    #데일리 출석 체크 혜택 받기
-    pag.moveTo(85+640+640, 300)
-    pag.drag(0, -250, 1.5)
+    #출석 체크 시즌4
+    pag.moveTo(85+640+640, 385)
+    pag.drag(0, -650, 1.5)
     time.sleep(random.uniform(3.5, 4.5))
     #출석 스크롤 다운
     pag.click(random.uniform(525+640+640, 595+640+640),random.uniform(230, 240), 1, random.uniform(0.1, 0.3))
@@ -346,11 +346,11 @@ def dailycheck():
     pag.click(random.uniform(540, 545),random.uniform(145+397, 155+397), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #출석
-    pag.click(random.uniform(525, 595),random.uniform(350+397, 360+397), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(550, 580),random.uniform(220+397, 230+397), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
-    #데일리 출석 체크 혜택 받기
-    pag.moveTo(85, 300+397)
-    pag.drag(0, -250, 1.5)
+    #출석 체크 시즌4
+    pag.moveTo(85, 385+397)
+    pag.drag(0, -650, 1.5)
     time.sleep(random.uniform(3.5, 4.5))
     #출석 스크롤 다운
     pag.click(random.uniform(525, 595),random.uniform(230+397, 240+397), 1, random.uniform(0.1, 0.3))
@@ -380,11 +380,11 @@ def dailycheck():
     pag.click(random.uniform(540+640, 545+640),random.uniform(145+397, 155+397), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #출석
-    pag.click(random.uniform(525+640, 595+640),random.uniform(350+397, 360+397), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(550+640, 580+640),random.uniform(220+397, 230+397), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
-    #데일리 출석 체크 혜택 받기
-    pag.moveTo(85+640, 300+397)
-    pag.drag(0, -250, 1.5)
+    #출석 체크 시즌4
+    pag.moveTo(85+640, 385+397)
+    pag.drag(0, -650, 1.5)
     time.sleep(random.uniform(3.5, 4.5))
     #출석 스크롤 다운
     pag.click(random.uniform(525+640, 595+640),random.uniform(230+397, 240+397), 1, random.uniform(0.1, 0.3))
@@ -414,11 +414,11 @@ def dailycheck():
     pag.click(random.uniform(540+640+640, 545+640+640),random.uniform(145+397, 155+397), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #출석
-    pag.click(random.uniform(525+640+640, 595+640+640),random.uniform(350+397, 360+397), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(550+640+640, 580+640+640),random.uniform(220+397, 230+397), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
-    #데일리 출석 체크 혜택 받기
-    pag.moveTo(85+640+640, 300+397)
-    pag.drag(0, -250, 1.5)
+    #출석 체크 시즌4
+    pag.moveTo(85+640+640, 385+397)
+    pag.drag(0, -650, 1.5)
     time.sleep(random.uniform(3.5, 4.5))
     #출석 스크롤 다운
     pag.click(random.uniform(525+640+640, 595+640+640),random.uniform(230+397, 240+397), 1, random.uniform(0.1, 0.3))
@@ -825,7 +825,9 @@ def fieldgate(x1, x2, y1, y2):
     #빠른 설정 모드
     pag.click(random.uniform(300+640+640, 330+640+640), random.uniform(215+397, 235+397), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
-    #절전 모드def buyticket():
+    #절전 모드
+
+def buyticket():
     #1번 케릭
     time.sleep(random.uniform(3.5, 4.5))
     pag.moveTo(316, 213)
@@ -1151,28 +1153,33 @@ def gotodesktop1():
 #변경내용 작성
 
 # dailygate(580, 610, 200, 230)
-dailygate(450, 500, 200, 230)
-time.sleep(5)
-dailycheck()
-time.sleep(5)
-rewardget()
-gotodesktop1
-time.sleep(60*123)
-gotodesktop2()
-time.sleep(30)
-fieldgate(320, 370, 200, 230)
-time.sleep(5)
-rewardget()
-time.sleep(5)
-gotodesktop1
+# dailygate(450, 500, 200, 230)
+# time.sleep(5)
+# dailycheck()
+# time.sleep(5)
+# rewardget()
+# gotodesktop1
+# time.sleep(60*123)
+# gotodesktop2()
+# time.sleep(30)
+# fieldgate(320, 370, 200, 230)
+# time.sleep(5)
+# rewardget()
+# time.sleep(5)
+# gotodesktop1
 
 # buyticket()
 
 
 
-# schedule.every().day.at("18:26:00").do(goto)
+schedule.every().day.at("19:53:00").do(dailycheck)
+schedule.every().day.at("19:58:00").do(rewardget)
+# schedule.every().day.at("19:24:00").do(dailygate(450, 500, 200, 230))
+schedule.every().day.at("20:03:00").do(fieldgate, x1=320, x2=370, y1=200, y2=230)
+# schedule.every().day.at("20:45:00").do(rewardget)
+# schedule.every().day.at("21:05:00").do(rewardget)
 
-# while True:
-#     schedule.run_pending()
-#     time.sleep(1)
+while True:
+    schedule.run_pending()
+    time.sleep(1)
 
