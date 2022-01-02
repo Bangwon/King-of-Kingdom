@@ -597,6 +597,9 @@ def dailygate(x1, x2, y1, y2):
     pag.click(random.uniform(350, 370), random.uniform(250, 265), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #확인
+    pag.click(random.uniform(584, 594), random.uniform(357, 367), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #순간이동
     pag.click(15, 299, 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #빠른 설정 모드
@@ -625,6 +628,9 @@ def dailygate(x1, x2, y1, y2):
     pag.click(random.uniform(350+640, 370+640), random.uniform(250, 265), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #확인
+    pag.click(random.uniform(584+640, 594+640), random.uniform(357, 367), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #순간이동
     pag.click(15+640, 299, 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #빠른 설정 모드
@@ -653,6 +659,9 @@ def dailygate(x1, x2, y1, y2):
     pag.click(random.uniform(350+640+640, 370+640+640), random.uniform(250, 265), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #확인
+    pag.click(random.uniform(584+640+640, 594+640+640), random.uniform(357, 367), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #순간이동
     pag.click(15+640+640, 299, 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #빠른 설정 모드
@@ -681,6 +690,9 @@ def dailygate(x1, x2, y1, y2):
     pag.click(random.uniform(350, 370), random.uniform(250+400, 265+400), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #확인
+    pag.click(random.uniform(584, 594), random.uniform(357+400, 367+400), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #순간이동
     pag.click(15, 299+400, 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #빠른 설정 모드
@@ -709,6 +721,9 @@ def dailygate(x1, x2, y1, y2):
     pag.click(random.uniform(350+640, 370+640), random.uniform(250+400, 265+400), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #확인
+    pag.click(random.uniform(584+640, 594+640), random.uniform(357+400, 367+400), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #순간이동
     pag.click(15+640, 299+400, 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #빠른 설정 모드
@@ -737,6 +752,9 @@ def dailygate(x1, x2, y1, y2):
     pag.click(random.uniform(350+640+640, 370+640+640), random.uniform(250+400, 265+400), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #확인
+    pag.click(random.uniform(584+640+640, 594+640+640), random.uniform(357+400, 367+400), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #순간이동
     pag.click(15+640+640, 299+400, 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #빠른 설정 모드
@@ -1272,20 +1290,24 @@ def gotodesktop1():
     time.sleep(4)
     pag.click(83, 45, 1, 0.2)
 
-schedule.every().day.at("09:59:00").do(gotodesktop2)
-schedule.every().day.at("10:00:00").do(dailygate, x=450, x2=500, y1=200, y2=230)
-schedule.every().day.at("10:07:00").do(dailycheck)
-schedule.every().day.at("10:14:30").do(rewardget)
-schedule.every().day.at("10:21:00").do(fieldgate, x1=320, x2=370, y1=200, y2=230)
-schedule.every().day.at("10:28:00").do(gotodesktop1)
-schedule.every().day.at("10:40:00").do(gotodesktop2)
-schedule.every().day.at("20:47:00").do(dailygate, x1=580, x2=610, y1=200, y2=230)
-schedule.every().day.at("20:54:00").do(rewardget)
+schedule.every().day.at("10:01:00").do(gotodesktop2)
+schedule.every().day.at("10:02:00").do(dailygate, x=450, x2=500, y1=200, y2=230)
+schedule.every().day.at("10:09:00").do(dailycheck)
+schedule.every().day.at("10:16:00").do(rewardget)
+schedule.every().day.at("10:23:00").do(gotodesktop1)
+schedule.every().day.at("11:03:00").do(gotodesktop2)
+schedule.every().day.at("11:04:00").do(fieldgate, x1=320, x2=370, y1=200, y2=230)
+schedule.every().day.at("11:11:00").do(rewardget)
+schedule.every().day.at("11:18:00").do(gotodesktop1)
+schedule.every().day.at("20:45:00").do(gotodesktop2)
+schedule.every().day.at("20:46:00").do(dailygate, x1=580, x2=610, y1=200, y2=230)
+schedule.every().day.at("20:53:00").do(rewardget)
 schedule.every().day.at("21:01:00").do(rewardget)
 schedule.every().day.at("21:08:00").do(dailyquest)
-schedule.every().day.at("22:55:00").do(fieldgate, x1=320, x2=370, y1=200, y2=230)
-schedule.every().day.at("23:02:00").do(gotodesktop1)
-
+schedule.every().day.at("21:15:00").do(gotodesktop1)
+schedule.every().day.at("22:47:00").do(gotodesktop2)
+schedule.every().day.at("22:48:00").do(fieldgate, x1=320, x2=370, y1=200, y2=230)
+schedule.every().day.at("22:55:00").do(gotodesktop1)
 
 while True:
     schedule.run_pending()
