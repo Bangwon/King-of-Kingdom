@@ -15,6 +15,8 @@ def autoexit1(x, y):
     #자동 사냥 해제
 
 def rewardget():
+    print("Rewardget Start")
+    print(time.ctime())
     #1번 케릭
     time.sleep(random.uniform(3.5, 4.5))
     pag.moveTo(316, 213)
@@ -235,8 +237,12 @@ def rewardget():
     pag.click(random.uniform(300+640+640, 330+640+640), random.uniform(215+400, 235+400), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #절전 모드
+    print("Rewardget End")
+    print(time.ctime())
 
 def dailycheck():
+    print("Dailycheck Start")
+    print(time.ctime())
     #1번 케릭
     time.sleep(random.uniform(3.5, 4.5))
     pag.moveTo(316, 213)
@@ -443,8 +449,15 @@ def dailycheck():
     pag.click(random.uniform(300+640+640, 330+640+640), random.uniform(215+400, 235+400), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #절전 모드
+    print("Dailycheck End")
+    print(time.ctime())
 
 def dailyquest():
+<<<<<<<< HEAD:LineageW_Buyticket.py
+========
+    print("Dailyquest Start")
+    print(time.ctime())
+>>>>>>>> 9f976477a4c255fe92b884fe02cfcee47d3f9f33:LineageW_test.py
     #1번 케릭
     autoexit1(0, 0)
     pag.click(random.uniform(580, 585),random.uniform(53, 59), 1, random.uniform(0.1, 0.3))
@@ -570,6 +583,12 @@ def dailyquest():
     pag.click(random.uniform(300+640+640, 330+640+640), random.uniform(215+400, 235+400), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #절전 모드
+<<<<<<<< HEAD:LineageW_Buyticket.py
+========
+    print("Dailyquest End")
+    print(time.ctime())
+
+>>>>>>>> 9f976477a4c255fe92b884fe02cfcee47d3f9f33:LineageW_test.py
 
 # 땅 450, 500, 200, 230
 # 이벤트 580, 610, 200, 230
@@ -577,6 +596,8 @@ def dailyquest():
 # 글루디오 던전 320, 370, 200, 230
 def dailygate(x1, x2, y1, y2):
     #1번 케릭
+    print("Dailygate Start")
+    print(time.ctime())
     time.sleep(random.uniform(3.5, 4.5))
     pag.moveTo(316, 213)
     pag.drag(-100, 0, 1.5)
@@ -761,8 +782,12 @@ def dailygate(x1, x2, y1, y2):
     pag.click(random.uniform(300+640+640, 330+640+640), random.uniform(215+400, 235+400), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #절전 모드
+    print("Dailygate End")
+    print(time.ctime())
 
 def fieldgate(x1, x2, y1, y2):
+    print("Filedgate Start")
+    print(time.ctime())
     #1번 케릭
     time.sleep(random.uniform(3.5, 4.5))
     pag.moveTo(316, 213)
@@ -966,8 +991,12 @@ def fieldgate(x1, x2, y1, y2):
     pag.click(random.uniform(300+640+640, 330+640+640), random.uniform(215+400, 235+400), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #절전 모드
+    print("Filedgate End")
+    print(time.ctime())
 
 def buyticket():
+    print("Buyticket Start")
+    print(time.ctime())
     #1번 케릭
     time.sleep(random.uniform(3.5, 4.5))
     pag.moveTo(316, 213)
@@ -1279,6 +1308,9 @@ def buyticket():
     pag.click(random.uniform(300+640+640, 330+640+640), random.uniform(215+400, 235+400), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #절전 모드
+    print("Buyticket End")
+    print(time.ctime())
+
 
 def gotodesktop2():
     pag.click(402, 1052, 1, 0.2)
@@ -1290,6 +1322,51 @@ def gotodesktop1():
     time.sleep(4)
     pag.click(83, 45, 1, 0.2)
 
+<<<<<<<< HEAD:LineageW_Buyticket.py
 time.sleep(5)
 buyticket()
 
+========
+schedule.every().day.at("12:52:00").do(gotodesktop2)
+schedule.every().day.at("12:58:00").do(dailygate, x1=450, x2=500, y1=200, y2=230)
+schedule.every().day.at("13:04:00").do(dailycheck)
+schedule.every().day.at("13:10:00").do(rewardget)
+# schedule.every().day.at("10:23:00").do(gotodesktop1)
+# schedule.every().day.at("11:03:00").do(gotodesktop2)
+# schedule.every().day.at("11:04:00").do(fieldgate, x1=320, x2=370, y1=200, y2=230)
+# schedule.every().day.at("11:11:00").do(rewardget)
+# schedule.every().day.at("11:18:00").do(gotodesktop1)
+# schedule.every().day.at("20:45:00").do(gotodesktop2)
+# schedule.every().day.at("20:46:00").do(dailygate, x1=580, x2=610, y1=200, y2=230)
+# schedule.every().day.at("20:53:00").do(rewardget)
+# schedule.every().day.at("21:01:00").do(rewardget)
+# schedule.every().day.at("21:08:00").do(dailyquest)
+# schedule.every().day.at("21:15:00").do(gotodesktop1)
+# schedule.every().day.at("22:47:00").do(gotodesktop2)
+# schedule.every().day.at("22:48:00").do(fieldgate, x1=320, x2=370, y1=200, y2=230)
+# schedule.every().day.at("22:55:00").do(gotodesktop1)
+
+# gotodesktop2()
+# dailygate(450, 500, 200, 230)
+# dailycheck()
+# rewardget()
+# gotodesktop1()
+# gotodesktop2()
+# fieldgate()
+# rewardget()
+# gotodesktop1()
+# gotodesktop2()
+# dailygate()
+# rewardget()
+# rewardget()
+# dailyquest()
+# gotodesktop1()
+# gotodesktop2()
+# fieldgate()
+# gotodesktop1()
+
+while True:
+    schedule.run_pending()
+    time.sleep(1)
+
+>>>>>>>> 9f976477a4c255fe92b884fe02cfcee47d3f9f33:LineageW_test.py
