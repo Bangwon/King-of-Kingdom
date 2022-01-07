@@ -258,6 +258,9 @@ def dailycheck():
     pag.click(random.uniform(550, 580),random.uniform(220, 230), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #출석 체크 시즌4
+    pag.click(random.uniform(550, 580),random.uniform(350, 360), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #출석 체크 시즌1
     pag.moveTo(85, 385)
     pag.drag(0, -650, 1.5)
     time.sleep(random.uniform(3.5, 4.5))
@@ -293,6 +296,9 @@ def dailycheck():
     pag.click(random.uniform(550+640, 580+640),random.uniform(220, 230), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #출석 체크 시즌4
+    pag.click(random.uniform(550+640, 580+640),random.uniform(350, 360), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #출석 체크 시즌1
     pag.moveTo(85+640, 385)
     pag.drag(0, -650, 1.5)
     time.sleep(random.uniform(3.5, 4.5))
@@ -328,6 +334,9 @@ def dailycheck():
     pag.click(random.uniform(550+640+640, 580+640+640),random.uniform(220, 230), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #출석 체크 시즌4
+    pag.click(random.uniform(550+1280, 580+1280),random.uniform(350, 360), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #출석 체크 시즌1
     pag.moveTo(85+640+640, 385)
     pag.drag(0, -650, 1.5)
     time.sleep(random.uniform(3.5, 4.5))
@@ -362,6 +371,9 @@ def dailycheck():
     pag.click(random.uniform(550, 580),random.uniform(220+400, 230+400), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #출석 체크 시즌4
+    pag.click(random.uniform(550, 580),random.uniform(350+400, 360+400), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #출석 체크 시즌1
     pag.moveTo(85, 385+400)
     pag.drag(0, -650, 1.5)
     time.sleep(random.uniform(3.5, 4.5))
@@ -396,6 +408,9 @@ def dailycheck():
     pag.click(random.uniform(550+640, 580+640),random.uniform(220+400, 230+400), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #출석 체크 시즌4
+    pag.click(random.uniform(550+640, 580+640),random.uniform(350+400, 360+400), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #출석 체크 시즌1
     pag.moveTo(85+640, 385+400)
     pag.drag(0, -650, 1.5)
     time.sleep(random.uniform(3.5, 4.5))
@@ -430,6 +445,9 @@ def dailycheck():
     pag.click(random.uniform(550+640+640, 580+640+640),random.uniform(220+400, 230+400), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #출석 체크 시즌4
+    pag.click(random.uniform(550+1280, 580+1280),random.uniform(350+400, 360+400), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #출석 체크 시즌1
     pag.moveTo(85+640+640, 385+400)
     pag.drag(0, -650, 1.5)
     time.sleep(random.uniform(3.5, 4.5))
@@ -1000,7 +1018,7 @@ def buyticket():
     pag.click(random.uniform(465, 470), random.uniform(53, 59), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #상점
-    pag.click(random.uniform(305, 315), random.uniform(261, 264), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(305, 315), random.uniform(261, 262), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #나중에 하기
     pag.click(random.uniform(10, 20), random.uniform(342, 350), 3, random.uniform(0.3, 0.9))
@@ -1052,7 +1070,7 @@ def buyticket():
     pag.click(random.uniform(465+640, 470+640), random.uniform(53, 59), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #상점
-    pag.click(random.uniform(305+640, 315+640), random.uniform(261, 264), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(305+640, 315+640), random.uniform(261, 262), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #나중에 하기
     pag.click(random.uniform(10+640, 20+640), random.uniform(342, 350), 3, random.uniform(0.3, 0.9))
@@ -1104,7 +1122,7 @@ def buyticket():
     pag.click(random.uniform(465+640+640, 470+640+640), random.uniform(53, 59), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #상점
-    pag.click(random.uniform(305+640+640, 315+640+640), random.uniform(261, 264), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(305+640+640, 315+640+640), random.uniform(261, 262), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #나중에 하기
     pag.click(random.uniform(10+640+640, 20+640+640), random.uniform(342, 350), 3, random.uniform(0.3, 0.9))
@@ -1156,7 +1174,7 @@ def buyticket():
     pag.click(random.uniform(465, 470), random.uniform(53+400, 59+400), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #상점
-    pag.click(random.uniform(305, 315), random.uniform(261+400, 264+400), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(305, 315), random.uniform(261+400, 262+400), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #나중에 하기
     pag.click(random.uniform(10, 20), random.uniform(342+400, 350+400), 3, random.uniform(0.3, 0.9))
@@ -1208,7 +1226,7 @@ def buyticket():
     pag.click(random.uniform(465+640, 470+640), random.uniform(53+400, 59+400), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #상점
-    pag.click(random.uniform(305+640, 315+640), random.uniform(261+400, 264+400), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(305+640, 315+640), random.uniform(261+400, 262+400), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #나중에 하기
     pag.click(random.uniform(10+640, 20+640), random.uniform(342+400, 350+400), 3, random.uniform(0.3, 0.9))
@@ -1260,7 +1278,7 @@ def buyticket():
     pag.click(random.uniform(465+640+640, 470+640+640), random.uniform(53+400, 59+400), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #상점
-    pag.click(random.uniform(305+640+640, 315+640+640), random.uniform(261+400, 264+400), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(305+640+640, 315+640+640), random.uniform(261+400, 262+400), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #나중에 하기
     pag.click(random.uniform(30+640+640, 40+640+640), random.uniform(342+400, 350+400), 3, random.uniform(0.3, 0.9))
@@ -1316,6 +1334,9 @@ def gotodesktop1():
     time.sleep(4)
     pag.click(83, 45, 1, 0.2)
 
+def time1():
+    print(time.ctime())
+
 schedule.every().day.at("10:01:00").do(gotodesktop2)
 schedule.every().day.at("10:02:00").do(dailygate, x1=450, x2=500, y1=200, y2=230)
 schedule.every().day.at("10:09:00").do(dailycheck)
@@ -1326,15 +1347,16 @@ schedule.every().day.at("11:04:00").do(fieldgate, x1=320, x2=370, y1=200, y2=230
 schedule.every().day.at("11:11:00").do(rewardget)
 schedule.every().day.at("11:18:00").do(gotodesktop1)
 schedule.every().day.at("20:45:00").do(gotodesktop2)
-schedule.every().day.at("20:46:00").do(dailygate, x1=580, x2=610, y1=200, y2=230)
 schedule.every().day.at("20:53:00").do(rewardget)
 schedule.every().day.at("21:01:00").do(rewardget)
 schedule.every().day.at("21:08:00").do(dailyquest)
-schedule.every().day.at("21:15:00").do(gotodesktop1)
-schedule.every().day.at("22:47:00").do(gotodesktop2)
-schedule.every().day.at("22:48:00").do(fieldgate, x1=320, x2=370, y1=200, y2=230)
-schedule.every().day.at("22:55:00").do(gotodesktop1)
+schedule.every().day.at("21:23:00").do(gotodesktop1)
+schedule.every(5).minutes.do(time1)
+schedule.every().monday.at("21:15:00").do(buyticket)
+schedule.every().thursday.at("21:15:00").do(buyticket)
+schedule.every().saturday.at("21:15:00").do(buyticket)
 
+# buyticket()
 # gotodesktop2()
 # dailygate(450, 500, 200, 230)
 # dailycheck()
@@ -1357,4 +1379,3 @@ schedule.every().day.at("22:55:00").do(gotodesktop1)
 while True:
     schedule.run_pending()
     time.sleep(1)
-

@@ -1284,13 +1284,17 @@ p_list = pag.locateAllOnScreen("C:\\Users\\ODIN\\ODIN\\LineageW\\summon.png", co
 p_list = list(p_list)
 
 def summon():
-    # autoexit1(1280, 400)
-    # pag.click(random.uniform(506+640+640, 519+640+640),random.uniform(49+400, 59+400),1, random.uniform(0.1, 0.3))
-    # time.sleep(random.uniform(3.5, 4.5))
-    # #가방
-    # pag.click(random.uniform(549+640+640, 562+640+640),random.uniform(92+400, 100+400),2, random.uniform(0.1, 0.3))
-    # time.sleep(random.uniform(3.5, 4.5))
-    # #기타
+    autoexit1(0, 0)
+    pag.click(random.uniform(506, 519),random.uniform(49, 59),1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #가방
+    pag.click(random.uniform(549, 562),random.uniform(92, 100),2, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #기타
+    pag.click(random.uniform(602, 612),random.uniform(324, 334),2, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #정렬
+
     while True:
         if len(p_list) == 0:
             pag.moveTo(496+1280, 246+400)
