@@ -240,235 +240,65 @@ def rewardget():
     print("Rewardget End")
     print(time.ctime())
 
-def dailycheck():
+def dailycheck(x, y):
     print("Dailycheck Start")
     print(time.ctime())
     #1번 케릭
     time.sleep(random.uniform(3.5, 4.5))
-    pag.moveTo(316, 213)
+    pag.moveTo(316+x, 213+y)
     pag.drag(-100, 0, 1.5)
     time.sleep(random.uniform(3.5, 4.5))
     #자동 사냥 해제
-    pag.click(random.uniform(610, 618),random.uniform(53, 59), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(610+x, 618+x),random.uniform(53+y, 59+y), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #메뉴
-    pag.click(random.uniform(540, 545),random.uniform(145, 155), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(540+x, 545+x),random.uniform(145+y, 155+y), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #출석
-    pag.click(random.uniform(550, 580),random.uniform(220, 230), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(550+x, 580+x),random.uniform(220+y, 230+y), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #출석 체크 시즌4
-    pag.click(random.uniform(550, 580),random.uniform(350, 360), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(550+x, 580+x),random.uniform(350+y, 360+y), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #출석 체크 시즌1
-    pag.moveTo(85, 385)
+    pag.moveTo(85+x, 385+y)
     pag.drag(0, -650, 1.5)
     time.sleep(random.uniform(3.5, 4.5))
     #출석 스크롤 다운
-    pag.click(random.uniform(525, 595),random.uniform(230, 240), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(525+x, 595+x),random.uniform(230+y, 240+y), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #출석 체크 시즌2
-    pag.click(random.uniform(525, 595),random.uniform(360, 370), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(525+x, 595+x),random.uniform(360+y, 370+y), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #출석 체크 시즌3
-    pag.click(random.uniform(610, 618),random.uniform(53, 59), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(134+x, 159+x),random.uniform(82+y, 92+y), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #혈맹
+    pag.click(random.uniform(548+x, 591+x),random.uniform(218+y, 228+y), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #혈맹 체크1
+    pag.click(random.uniform(548+x, 591+x),random.uniform(350+y, 360+y), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #혈맹 체크2
+    pag.click(random.uniform(610+x, 618+x),random.uniform(53+y, 59+y), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(4.5, 5.5))
     #출석 나가기
-    pag.click(15, 299, 1, random.uniform(0.1, 0.3))
+    pag.click(15+x, 299+y, 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #빠른 설정 모드
-    pag.click(random.uniform(300, 330), random.uniform(215, 235), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #절전 모드
-
-
-    #2번 케릭
-    pag.moveTo(316+640, 225)
-    pag.drag(200, 50, 1)
-    time.sleep(random.uniform(3.5, 4.5))
-    #자동 사냥 해제
-    pag.click(random.uniform(610+640, 618+640),random.uniform(53, 59), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #메뉴
-    pag.click(random.uniform(540+640, 545+640),random.uniform(145, 155), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석
-    pag.click(random.uniform(550+640, 580+640),random.uniform(220, 230), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 체크 시즌4
-    pag.click(random.uniform(550+640, 580+640),random.uniform(350, 360), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 체크 시즌1
-    pag.moveTo(85+640, 385)
-    pag.drag(0, -650, 1.5)
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 스크롤 다운
-    pag.click(random.uniform(525+640, 595+640),random.uniform(230, 240), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 체크 시즌2
-    pag.click(random.uniform(525+640, 595+640),random.uniform(360, 370), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 체크 시즌3
-    pag.click(random.uniform(610+640, 618+640),random.uniform(53, 59), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(4.5, 5.5))
-    #출석 나가기
-    pag.click(15+640, 299, 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #빠른 설정 모드
-    pag.click(random.uniform(300+640, 330+640), random.uniform(215, 235), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #절전 모드
-
-
-    #3번 케릭
-    pag.moveTo(316+640+640, 225)
-    pag.drag(200, 50, 1)
-    time.sleep(random.uniform(3.5, 4.5))
-    #자동 사냥 해제
-    pag.click(random.uniform(610+640+640, 618+640+640),random.uniform(53, 59), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #메뉴
-    pag.click(random.uniform(540+640+640, 545+640+640),random.uniform(145, 155), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석
-    pag.click(random.uniform(550+640+640, 580+640+640),random.uniform(220, 230), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 체크 시즌4
-    pag.click(random.uniform(550+1280, 580+1280),random.uniform(350, 360), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 체크 시즌1
-    pag.moveTo(85+640+640, 385)
-    pag.drag(0, -650, 1.5)
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 스크롤 다운
-    pag.click(random.uniform(525+640+640, 595+640+640),random.uniform(230, 240), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 체크 시즌2
-    pag.click(random.uniform(525+640+640, 595+640+640),random.uniform(360, 370), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 체크 시즌3
-    pag.click(random.uniform(610+640+640, 618+640+640),random.uniform(53, 59), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(4.5, 5.5))
-    #출석 나가기
-    pag.click(15+640+640, 299, 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #빠른 설정 모드
-    pag.click(random.uniform(300+640+640, 330+640+640), random.uniform(215, 235), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #절전 모드
-
-    #4번 케릭
-    pag.moveTo(316, 213+400)
-    pag.drag(200, 50, 1)
-    time.sleep(random.uniform(3.5, 4.5))
-    #자동 사냥 해제
-    pag.click(random.uniform(610, 618),random.uniform(53+400, 59+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #메뉴
-    pag.click(random.uniform(540, 545),random.uniform(145+400, 155+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석
-    pag.click(random.uniform(550, 580),random.uniform(220+400, 230+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 체크 시즌4
-    pag.click(random.uniform(550, 580),random.uniform(350+400, 360+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 체크 시즌1
-    pag.moveTo(85, 385+400)
-    pag.drag(0, -650, 1.5)
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 스크롤 다운
-    pag.click(random.uniform(525, 595),random.uniform(230+400, 240+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 체크 시즌2
-    pag.click(random.uniform(525, 595),random.uniform(360+400, 370+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 체크 시즌3
-    pag.click(random.uniform(610, 618),random.uniform(53+400, 59+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(4.5, 5.5))
-    #출석 나가기
-    pag.click(15, 299+400, 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #빠른 설정 모드
-    pag.click(random.uniform(300, 330), random.uniform(215+400, 235+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #절전 모드
-
-    #5번 케릭
-    pag.moveTo(316+640, 225+400)
-    pag.drag(200, 50, 1)
-    time.sleep(random.uniform(3.5, 4.5))
-    #자동 사냥 해제
-    pag.click(random.uniform(610+640, 618+640),random.uniform(53+400, 59+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #메뉴
-    pag.click(random.uniform(540+640, 545+640),random.uniform(145+400, 155+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석
-    pag.click(random.uniform(550+640, 580+640),random.uniform(220+400, 230+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 체크 시즌4
-    pag.click(random.uniform(550+640, 580+640),random.uniform(350+400, 360+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 체크 시즌1
-    pag.moveTo(85+640, 385+400)
-    pag.drag(0, -650, 1.5)
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 스크롤 다운
-    pag.click(random.uniform(525+640, 595+640),random.uniform(230+400, 240+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 체크 시즌2
-    pag.click(random.uniform(525+640, 595+640),random.uniform(360+400, 370+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 체크 시즌3
-    pag.click(random.uniform(610+640, 618+640),random.uniform(53+400, 59+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(4.5, 5.5))
-    #출석 나가기
-    pag.click(15+640, 299+400, 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #빠른 설정 모드
-    pag.click(random.uniform(300+640, 330+640), random.uniform(215+400, 235+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #절전 모드
-
-    #6번 케릭
-    pag.moveTo(316+640+640, 225+400)
-    pag.drag(200, 50, 1)
-    time.sleep(random.uniform(3.5, 4.5))
-    #자동 사냥 해제
-    pag.click(random.uniform(610+640+640, 618+640+640),random.uniform(53+400, 59+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #메뉴
-    pag.click(random.uniform(540+640+640, 545+640+640),random.uniform(145+400, 155+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석
-    pag.click(random.uniform(550+640+640, 580+640+640),random.uniform(220+400, 230+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 체크 시즌4
-    pag.click(random.uniform(550+1280, 580+1280),random.uniform(350+400, 360+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 체크 시즌1
-    pag.moveTo(85+640+640, 385+400)
-    pag.drag(0, -650, 1.5)
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 스크롤 다운
-    pag.click(random.uniform(525+640+640, 595+640+640),random.uniform(230+400, 240+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 체크 시즌2
-    pag.click(random.uniform(525+640+640, 595+640+640),random.uniform(360+400, 370+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 체크 시즌3
-    pag.click(random.uniform(610+640+640, 618+640+640),random.uniform(53+400, 59+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #출석 나가기
-    pag.click(15+640+640, 299+400, 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #빠른 설정 모드
-    pag.click(random.uniform(300+640+640, 330+640+640), random.uniform(215+400, 235+400), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(300+x, 330+x), random.uniform(215+y, 235+y), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #절전 모드
     print("Dailycheck End")
     print(time.ctime())
+
+def dailycheckall():
+    dailycheck(0, 0)
+    dailycheck(640, 0)
+    dailycheck(1280, 0)
+    dailycheck(0, 400)
+    dailycheck(640, 400)
+    dailycheck(1280, 400)
 
 def dailyquest():
     print("Dailyquest Start")
@@ -1488,7 +1318,7 @@ schedule.every().day.at("10:01:00").do(gotodesktop2)
 schedule.every().day.at("10:02:00").do(stockitemall)
 schedule.every().day.at("10:09:00").do(buyportionall)
 schedule.every().day.at("10:16:00").do(dailygate, x1=450, x2=500, y1=200, y2=230)
-schedule.every().day.at("10:23:00").do(dailycheck)
+schedule.every().day.at("10:23:00").do(dailycheckall)
 schedule.every().day.at("10:30:00").do(rewardget)
 schedule.every().day.at("10:37:00").do(gotodesktop1)
 schedule.every().day.at("11:25:00").do(gotodesktop2)
@@ -1508,7 +1338,7 @@ schedule.every().saturday.at("21:15:00").do(buyticket)
 # buyticket()
 # gotodesktop2()
 # dailygate(450, 500, 200, 230)
-# dailycheck()
+# dailycheckall()
 # rewardget()
 # gotodesktop1()
 # gotodesktop2()
@@ -1522,7 +1352,7 @@ schedule.every().saturday.at("21:15:00").do(buyticket)
 # dailyquest()
 # gotodesktop1()
 # gotodesktop2()
-fieldgate(320, 370, 200, 230)
+# fieldgate(320, 370, 200, 230)
 # gotodesktop1()
 
 while True:
