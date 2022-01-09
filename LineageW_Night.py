@@ -1403,6 +1403,12 @@ def buyportion(x, y):
     pag.click(random.uniform(418+x, 433+x), random.uniform(211+y, 225+y), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(20.5, 21.5))
     #잡화상인
+    pag.click(random.uniform(22+x, 38+x), random.uniform(129+y, 142+y), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #빨간물약
+    pag.click(random.uniform(219+x, 233+x), random.uniform(365+y, 375+y), 7, random.uniform(0.5, 1))
+    time.sleep(random.uniform(3.5, 4.5))
+    #10개X7
     pag.click(random.uniform(22+x, 38+x), random.uniform(162+y, 178+y), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #초록물약
@@ -1412,15 +1418,15 @@ def buyportion(x, y):
     pag.click(random.uniform(22+x, 38+x), random.uniform(271+y, 292+y), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #변신줌서
-    pag.click(random.uniform(219+x, 233+x), random.uniform(365+y, 375+y), 5, random.uniform(0.5, 1))
+    pag.click(random.uniform(219+x, 233+x), random.uniform(365+y, 375+y), 3, random.uniform(0.5, 1))
     time.sleep(random.uniform(3.5, 4.5))
-    #10개X5
+    #10개X3
     pag.click(random.uniform(22+x, 38+x), random.uniform(310+y, 327+y), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #마법인형줌서
-    pag.click(random.uniform(219+x, 233+x), random.uniform(365+y, 375+y), 5, random.uniform(0.5, 1))
+    pag.click(random.uniform(219+x, 233+x), random.uniform(365+y, 375+y), 3, random.uniform(0.5, 1))
     time.sleep(random.uniform(3.5, 4.5))
-    #10개X5
+    #10개X3
     pag.moveTo(52+x, 309+y)
     pag.drag(0, -102, 1.5)
     time.sleep(random.uniform(1, 2))
@@ -1479,27 +1485,26 @@ def time1():
 # 글루디오 던전 320, 370, 200, 230
 
 schedule.every().day.at("10:01:00").do(gotodesktop2)
-schedule.every().day.at("10:02:00").do(dailygate, x1=450, x2=500, y1=200, y2=230)
-schedule.every().day.at("10:09:00").do(dailycheck)
-schedule.every().day.at("10:16:00").do(rewardget)
-schedule.every().day.at("10:23:00").do(gotodesktop1)
-schedule.every().day.at("11:03:00").do(gotodesktop2)
-schedule.every().day.at("11:04:00").do(stockitemall)
-schedule.every().day.at("11:11:00").do(buyportionall)
-schedule.every().day.at("11:18:00").do(fieldgate, x1=320, x2=370, y1=200, y2=230)
-schedule.every().day.at("11:25:00").do(rewardget)
-schedule.every().day.at("11:32:00").do(gotodesktop1)
-schedule.every().day.at("20:45:00").do(gotodesktop2)
+schedule.every().day.at("10:02:00").do(stockitemall)
+schedule.every().day.at("10:09:00").do(buyportionall)
+schedule.every().day.at("10:16:00").do(dailygate, x1=450, x2=500, y1=200, y2=230)
+schedule.every().day.at("10:23:00").do(dailycheck)
+schedule.every().day.at("10:30:00").do(rewardget)
+schedule.every().day.at("10:37:00").do(gotodesktop1)
+schedule.every().day.at("11:19:00").do(gotodesktop2)
+schedule.every().day.at("11:20:00").do(fieldgate, x1=320, x2=370, y1=200, y2=230)
+schedule.every().day.at("11:27:00").do(rewardget)
+schedule.every().day.at("11:34:00").do(gotodesktop1)
+schedule.every().day.at("20:52:00").do(gotodesktop2)
 schedule.every().day.at("20:53:00").do(rewardget)
 schedule.every().day.at("21:01:00").do(rewardget)
 schedule.every().day.at("21:08:00").do(dailyquest)
-schedule.every().day.at("21:23:00").do(gotodesktop1)
+schedule.every().day.at("21:15:00").do(gotodesktop1)
 schedule.every(5).minutes.do(time1)
 schedule.every().monday.at("21:15:00").do(buyticket)
 schedule.every().thursday.at("21:15:00").do(buyticket)
 schedule.every().saturday.at("21:15:00").do(buyticket)
 
-# buyportion()
 # buyticket()
 # gotodesktop2()
 # dailygate(450, 500, 200, 230)
