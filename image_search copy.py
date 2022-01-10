@@ -30,3 +30,14 @@ import time
 # region1 = (t1[0], t2[1], t2[0]-t1[0], t2[1]-t1[1])
 
 # pag.screenshot('C:\\Users\\ODIN\\ODIN\\LineageW\\find.png', region = region1)
+
+p_list = pag.locateAllOnScreen("C:\\Users\\ODIN\\ODIN\\LineageW\\summon.png", confidence=0.99)
+p_list = list(p_list)
+p=pag.center(p_list[0])
+# len=len(p_list)
+print(p)
+# print(len)
+pag.click(p[0], p[1], 2, 1)
+
+# if p[0] > f1[0] and p[1] > f1[1] and p[0] < f2[0] and p[1] <f2[1]:
+#     print(p)
