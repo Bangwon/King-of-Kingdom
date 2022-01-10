@@ -2,7 +2,6 @@ import pyautogui as pag
 import random
 import time
 from PIL import ImageGrab
-screen=ImageGrab.grab()
 import schedule
 import os
 
@@ -121,48 +120,16 @@ def summon(x, y):
 
 def summon1(x, y):
     autoexit1(x, y)
-    time.sleep(5)
-    a=0
-    b=0
-    # while a<3:
-    #     pag.click(random.uniform(293+x, 311+x),random.uniform(353+y, 373+y),2, random.uniform(0.5, 1))
-    #     time.sleep(random.uniform(3.5, 4.5))
-    #     #변신클릭
-    #     p_list = pag.locateAllOnScreen("C:\\Users\\ODIN\\ODIN\\LineageW\\summon1.png", confidence=0.9)
-    #     p_list = list(p_list)
-    #     k=0
-    #     if len(p_list) > 0:
-    #         pag.click(random.uniform(587+x, 617+x), random.uniform(61+y, 67+y), 1, random.uniform(0.5, 1))
-    #         time.sleep(3)
-    #         #SKIP
-    #         pag.click(random.uniform(610+x, 613+x), random.uniform(373+y, 376+y), 1, random.uniform(0.5, 1))
-    #         time.sleep(3)
-    #         #컷신스킵하기
-    #         pag.click(random.uniform(299+x, 337+x), random.uniform(371+y, 379+y), 2, random.uniform(0.5, 1))
-    #         time.sleep(5)
-    #         #소환 확인
-    #         k=+1
-
-    #     elif len(p_list) >0:
-    #         pag.click(random.uniform(299+x, 337+x), random.uniform(371+y, 379+y), 2, random.uniform(0.5, 1))
-    #         time.sleep(5)
-    #         #소환 확인
-
-    #     else :
-    #         a=+1
-    #         time.sleep(2)
-
+    color = 199, 198, 196
+    color1 = 106, 95, 86
+    screen=ImageGrab.grab()
+    rgb = screen.getpixel((304+x,360+y))
+    rgb1 = screen.getpixel((341+x,360+y))
     time.sleep(3)
-    while True:
-        pos= 337+x, 362+y
-        color = 189, 185, 181
-        rgb = screen.getpixel(pos)
-        print(pos)
-        print(color)
-        print(rgb)
-
-        if rgb == color:
-            pag.click(random.uniform(329+x, 349+x),random.uniform(353+y, 373+y),2, random.uniform(0.5, 1))
+    #329, 349
+    if rgb == color:
+        while True:
+            pag.click(random.uniform(296+x, 311+x),random.uniform(353+y, 373+y),2, random.uniform(0.5, 1))
             time.sleep(random.uniform(4.5, 5.5))
             #변신클릭
             p_list = pag.locateAllOnScreen("C:\\Users\\ODIN\\ODIN\\LineageW\\summon1.png", confidence=0.9)
@@ -170,8 +137,13 @@ def summon1(x, y):
 
             if len(p_list) > 0:
                 pag.click(random.uniform(299+x, 337+x), random.uniform(371+y, 379+y), 2, random.uniform(0.5, 1))
-                time.sleep(3)
+                time.sleep(2)
+                rgb = screen.getpixel((304+x,306+y))
+                print(rgb)
                 #소환 확인
+
+            elif not rgb== color :
+                break
 
             else :
                 pag.click(random.uniform(587+x, 617+x), random.uniform(61+y, 67+y), 1, random.uniform(0.5, 1))
@@ -183,9 +155,35 @@ def summon1(x, y):
                 pag.click(random.uniform(299+x, 337+x), random.uniform(371+y, 379+y), 2, random.uniform(0.5, 1))
                 time.sleep(3)
                 #소환 확인
-        elif not rgb == color :
-            break
 
+    if not rgb == color and rgb1 == color1:
+        while True:
+            pag.click(random.uniform(332+x, 346+x),random.uniform(353+y, 373+y),2, random.uniform(0.5, 1))
+            time.sleep(random.uniform(4.5, 5.5))
+            #변신클릭
+            p_list = pag.locateAllOnScreen("C:\\Users\\ODIN\\ODIN\\LineageW\\summon1.png", confidence=0.9)
+            p_list = list(p_list)
+
+            if len(p_list) > 0:
+                pag.click(random.uniform(299+x, 337+x), random.uniform(371+y, 379+y), 2, random.uniform(0.5, 1))
+                time.sleep(2)
+                rgb1 = screen.getpixel((304+x,306+y))
+                print(rgb1)
+                #소환 확인
+
+            elif not rgb1== color1 :
+                break
+
+            else :
+                pag.click(random.uniform(587+x, 617+x), random.uniform(61+y, 67+y), 1, random.uniform(0.5, 1))
+                time.sleep(3)
+                #SKIP
+                pag.click(random.uniform(610+x, 613+x), random.uniform(373+y, 376+y), 1, random.uniform(0.5, 1))
+                time.sleep(3)
+                #컷신스킵하기
+                pag.click(random.uniform(299+x, 337+x), random.uniform(371+y, 379+y), 2, random.uniform(0.5, 1))
+                time.sleep(3)
+                #소환 확인
 
     pag.click(15+x, 299+y, 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
@@ -197,10 +195,9 @@ def summon1(x, y):
 def summon1all():
     # summon1(0, 0)
     # summon1(640, 0)
-    # summon1(1280, 0)
-    # summon1(0, 400)
-    # summon1(640, 400)
+    summon1(1280, 0)
+    summon1(0, 400)
+    summon1(640, 400)
     summon1(1280, 400)
-
 
 summon1all()

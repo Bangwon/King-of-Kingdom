@@ -474,10 +474,10 @@ def dailygate(x1, x2, y1, y2, x3, y3):
 def dailygateall():
     dailygate(450, 500, 200, 230, 0, 0)
     dailygate(450, 500, 200, 230, 640, 0)
-    # dailygate(450, 500, 200, 230, 1280, 0)
+    dailygate(450, 500, 200, 230, 1280, 0)
     dailygate(450, 500, 200, 230, 0, 400)
-    dailygate(450, 500, 200, 230, 640, 400)
-    dailygate(450, 500, 200, 230, 1280, 400)
+    # dailygate(450, 500, 200, 230, 640, 400)
+    # dailygate(450, 500, 200, 230, 1280, 400)
 
 def fieldgate(x1, x2, y1, y2, x3, y3):
     print("Filedgate Start")
@@ -522,10 +522,10 @@ def fieldgate(x1, x2, y1, y2, x3, y3):
 def fieldgateall():
     fieldgate(320, 370, 200, 230, 0, 0)
     fieldgate(320, 370, 200, 230, 640, 0)
-    # fieldgate(320, 370, 200, 230, 1280, 0)
+    fieldgate(320, 370, 200, 230, 1280, 0)
     fieldgate(320, 370, 200, 230, 0, 400)
-    fieldgate(320, 370, 200, 230, 640, 400)
-    fieldgate(320, 370, 200, 230, 1280, 400)
+    # fieldgate(320, 370, 200, 230, 640, 400)
+    # fieldgate(320, 370, 200, 230, 1280, 400)
 
 def buyticket():
     print("Buyticket Start")
@@ -910,10 +910,10 @@ def stockitem(x, y):
 def stockitemall():
     stockitem(0, 0)
     stockitem(640, 0)
-    # stockitem(1280, 0)
+    stockitem(1280, 0)
     stockitem(0, 400)
-    stockitem(640, 400)
-    stockitem(1280, 400)
+    # stockitem(640, 400)
+    # stockitem(1280, 400)
 
 def buyportion(x, y):
     print("Buyportion Start")
@@ -986,6 +986,77 @@ def buyportion(x, y):
     print("Buyportion End")
     print(time.ctime())
 
+def buyportiontail(x, y):
+    print("Buyportion Start")
+    print(time.ctime())
+    #1번 케릭
+    autoexit1(x, y)
+    # pag.click(random.uniform(547, 564),random.uniform(353, 373), 1, random.uniform(0.1, 0.3))
+    # time.sleep(random.uniform(3.5, 4.5))
+    # #귀환
+    pag.click(random.uniform(554+x, 572+x),random.uniform(281+y, 297+y), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #방위
+    pag.click(random.uniform(385+x, 403+x),random.uniform(210+y, 231+y), 3, random.uniform(0.5, 1))
+    time.sleep(random.uniform(3.5, 4.5))
+    #상인
+    pag.click(random.uniform(418+x, 433+x), random.uniform(211+y, 225+y), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(20.5, 21.5))
+    #잡화상인
+    pag.click(random.uniform(22+x, 38+x), random.uniform(129+y, 142+y), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #빨간물약
+    pag.click(random.uniform(261+x, 283+x), random.uniform(365+y, 375+y), 2, random.uniform(0.5, 1))
+    time.sleep(random.uniform(3.5, 4.5))
+    #100개x2
+    # pag.click(random.uniform(22+x, 38+x), random.uniform(162+y, 178+y), 1, random.uniform(0.1, 0.3))
+    # time.sleep(random.uniform(3.5, 4.5))
+    # #초록물약
+    # pag.click(random.uniform(309+x, 328+x), random.uniform(365+y, 375+y), 1, random.uniform(0.1, 0.3))
+    # time.sleep(random.uniform(3.5, 4.5))
+    # #MAX
+    pag.click(random.uniform(22+x, 38+x), random.uniform(271+y, 292+y), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #변신줌서
+    pag.click(random.uniform(219+x, 233+x), random.uniform(365+y, 375+y), 3, random.uniform(0.5, 1))
+    time.sleep(random.uniform(3.5, 4.5))
+    #10개X3
+    pag.click(random.uniform(22+x, 38+x), random.uniform(310+y, 327+y), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #마법인형줌서
+    pag.click(random.uniform(219+x, 233+x), random.uniform(365+y, 375+y), 3, random.uniform(0.5, 1))
+    time.sleep(random.uniform(3.5, 4.5))
+    #10개X3
+    pag.moveTo(52+x, 309+y)
+    pag.drag(0, -102, 1.5)
+    time.sleep(random.uniform(1, 2))
+    pag.click(random.uniform(22+x, 38+x), random.uniform(244+y, 261+y), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #순간이동 주문서
+    pag.click(random.uniform(219+x, 233+x), random.uniform(365+y, 375+y), 1, random.uniform(0.5, 1))
+    time.sleep(random.uniform(3.5, 4.5))
+    #10개
+    pag.click(random.uniform(22+x, 38+x), random.uniform(284+y, 296+y), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #귀환 주문서
+    pag.click(random.uniform(219+x, 233+x), random.uniform(365+y, 375+y), 1, random.uniform(0.5, 1))
+    time.sleep(random.uniform(3.5, 4.5))
+    #10개
+    pag.click(random.uniform(564+x, 610+x), random.uniform(360+y, 373+y), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #모두구매
+    pag.click(random.uniform(575+x, 620+x), random.uniform(50+y, 59+y), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #나가기
+    pag.click(15+x, 299+y, 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #빠른 설정 모드
+    pag.click(random.uniform(300+x, 330+x), random.uniform(215+y, 235+y), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #절전 모드
+    print("Buyportion End")
+    print(time.ctime())
+
 def buyportionall():
     buyportion(0, 0)
     buyportion(640, 0)
@@ -994,6 +1065,97 @@ def buyportionall():
     buyportion(640, 400)
     buyportion(1280, 400)
 
+def buyportiontailall():
+    buyportiontail(0, 0)
+    buyportiontail(640, 0)
+    buyportiontail(1280, 0)
+    buyportiontail(0,400)
+    # buyportiontail(640, 400)
+    # buyportiontail(1280, 400)
+    
+def summon1(x, y):
+    autoexit1(x, y)
+    color = 199, 198, 196
+    color1 = 106, 95, 86
+    screen=ImageGrab.grab()
+    rgb = screen.getpixel((304+x,360+y))
+    rgb1 = screen.getpixel((341+x,360+y))
+    time.sleep(3)
+    #329, 349
+    if rgb == color:
+        while True:
+            pag.click(random.uniform(296+x, 311+x),random.uniform(353+y, 373+y),2, random.uniform(0.5, 1))
+            time.sleep(random.uniform(4.5, 5.5))
+            #변신클릭
+            p_list = pag.locateAllOnScreen("C:\\Users\\ODIN\\ODIN\\LineageW\\summon1.png", confidence=0.9)
+            p_list = list(p_list)
+
+            if len(p_list) > 0:
+                pag.click(random.uniform(299+x, 337+x), random.uniform(371+y, 379+y), 2, random.uniform(0.5, 1))
+                time.sleep(2)
+                rgb = screen.getpixel((304+x,306+y))
+                print(rgb)
+                #소환 확인
+
+            elif not rgb== color :
+                break
+
+            else :
+                pag.click(random.uniform(587+x, 617+x), random.uniform(61+y, 67+y), 1, random.uniform(0.5, 1))
+                time.sleep(3)
+                #SKIP
+                pag.click(random.uniform(610+x, 613+x), random.uniform(373+y, 376+y), 1, random.uniform(0.5, 1))
+                time.sleep(3)
+                #컷신스킵하기
+                pag.click(random.uniform(299+x, 337+x), random.uniform(371+y, 379+y), 2, random.uniform(0.5, 1))
+                time.sleep(3)
+                #소환 확인
+
+    if not rgb == color and rgb1 == color1:
+        while True:
+            pag.click(random.uniform(332+x, 346+x),random.uniform(353+y, 373+y),2, random.uniform(0.5, 1))
+            time.sleep(random.uniform(4.5, 5.5))
+            #변신클릭
+            p_list = pag.locateAllOnScreen("C:\\Users\\ODIN\\ODIN\\LineageW\\summon1.png", confidence=0.9)
+            p_list = list(p_list)
+
+            if len(p_list) > 0:
+                pag.click(random.uniform(299+x, 337+x), random.uniform(371+y, 379+y), 2, random.uniform(0.5, 1))
+                time.sleep(2)
+                rgb1 = screen.getpixel((304+x,306+y))
+                print(rgb1)
+                #소환 확인
+
+            elif not rgb1== color1 :
+                break
+
+            else :
+                pag.click(random.uniform(587+x, 617+x), random.uniform(61+y, 67+y), 1, random.uniform(0.5, 1))
+                time.sleep(3)
+                #SKIP
+                pag.click(random.uniform(610+x, 613+x), random.uniform(373+y, 376+y), 1, random.uniform(0.5, 1))
+                time.sleep(3)
+                #컷신스킵하기
+                pag.click(random.uniform(299+x, 337+x), random.uniform(371+y, 379+y), 2, random.uniform(0.5, 1))
+                time.sleep(3)
+                #소환 확인
+
+    pag.click(15+x, 299+y, 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #빠른 설정 모드
+    pag.click(random.uniform(300+x, 330+x), random.uniform(215+y, 235+y), 1, random.uniform(0.1, 0.3))
+    time.sleep(random.uniform(3.5, 4.5))
+    #절전 모드
+
+def summon1all():
+    summon1(0, 0)
+    summon1(640, 0)
+    summon1(1280, 0)
+    summon1(0, 400)
+    summon1(640, 400)
+    summon1(1280, 400)
+
+    
 def gotodesktop2():
     pag.click(402, 1052, 1, 0.2)
     time.sleep(4)
@@ -1015,7 +1177,7 @@ def time1():
 
 schedule.every().day.at("10:01:00").do(gotodesktop2)
 schedule.every().day.at("10:02:00").do(stockitemall)
-schedule.every().day.at("10:09:00").do(buyportionall)
+schedule.every().day.at("10:09:00").do(buyportiontailall)
 schedule.every().day.at("10:16:00").do(dailygateall)
 schedule.every().day.at("10:23:00").do(dailycheckall)
 schedule.every().day.at("10:30:00").do(rewardget)
@@ -1028,14 +1190,15 @@ schedule.every().day.at("20:52:00").do(gotodesktop2)
 schedule.every().day.at("20:53:00").do(rewardget)
 schedule.every().day.at("21:01:00").do(rewardget)
 schedule.every().day.at("21:08:00").do(dailyquest)
-schedule.every().day.at("21:15:00").do(gotodesktop1)
+schedule.every().day.at("21:22:00").do(gotodesktop1)
 schedule.every(5).minutes.do(time1)
 schedule.every().monday.at("21:15:00").do(buyticket)
 schedule.every().thursday.at("21:15:00").do(buyticket)
 schedule.every().saturday.at("21:15:00").do(buyticket)
 
 
-time.sleep(60*24)
+# stockitem(1280, 0)
+# buyportiontail(1280,0)
 # buyticket()
 # gotodesktop2()
 # stockitemall()
@@ -1045,7 +1208,6 @@ time.sleep(60*24)
 # rewardget()
 # gotodesktop1()
 # gotodesktop2()
-fieldgateall()
 # rewardget()
 # gotodesktop1()
 # gotodesktop2()
