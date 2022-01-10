@@ -1195,7 +1195,7 @@ schedule.every(5).minutes.do(time1)
 schedule.every().monday.at("21:15:00").do(buyticket)
 schedule.every().thursday.at("21:15:00").do(buyticket)
 schedule.every().saturday.at("21:15:00").do(buyticket)
-
+schedule.every().sunday.at("21:15:00").do(summon1all)
 
 # stockitem(1280, 0)
 # buyportiontail(1280,0)
