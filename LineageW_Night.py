@@ -474,220 +474,58 @@ def dailygate(x1, x2, y1, y2, x3, y3):
 def dailygateall():
     dailygate(450, 500, 200, 230, 0, 0)
     dailygate(450, 500, 200, 230, 640, 0)
-    dailygate(450, 500, 200, 230, 1280, 0)
+    # dailygate(450, 500, 200, 230, 1280, 0)
     dailygate(450, 500, 200, 230, 0, 400)
     dailygate(450, 500, 200, 230, 640, 400)
     dailygate(450, 500, 200, 230, 1280, 400)
 
-
-def fieldgate(x1, x2, y1, y2):
+def fieldgate(x1, x2, y1, y2, x3, y3):
     print("Filedgate Start")
     print(time.ctime())
     #1번 케릭
     time.sleep(random.uniform(3.5, 4.5))
-    pag.moveTo(316, 213)
+    pag.moveTo(316+x3, 213+y3)
     pag.drag(-100, 0, 1.5)
     time.sleep(random.uniform(3.5, 4.5))
     #자동 사냥 해제
-    pag.click(random.uniform(610, 618), random.uniform(53, 59), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(610+x3, 618+x3), random.uniform(53+y3, 59+y3), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #메뉴
-    pag.click(random.uniform(580, 585), random.uniform(145, 150), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(580+x3, 585+x3), random.uniform(145+y3, 150+y3), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #던전
-    pag.click(random.uniform(320, 340), random.uniform(80, 90), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(320+x3, 340+x3), random.uniform(80+y3, 90+y3), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #일반
-    pag.click(random.uniform(x1, x2), random.uniform(y1, y2), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(x1+x3, x2+x3), random.uniform(y1+y3, y2+y3), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #던전 선택
-    pag.click(random.uniform(425, 430), random.uniform(129, 134), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(425+x3, 430+x3), random.uniform(129+y3, 134+y3), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #1단계
-    pag.click(random.uniform(350, 370), random.uniform(250, 265), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(350+x3, 370+x3), random.uniform(250+y3, 265+y3), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #확인
-    pag.click(random.uniform(585, 590), random.uniform(240, 245), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(585+x3, 590+x3), random.uniform(240+y3, 245+y3), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #자동 공격
-    pag.click(15, 299, 1, random.uniform(0.1, 0.3))
+    pag.click(15+x3, 299+y3, 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #빠른 설정 모드
-    pag.click(random.uniform(300, 330), random.uniform(215, 235), 1, random.uniform(0.1, 0.3))
+    pag.click(random.uniform(300+x3, 330+x3), random.uniform(215+y3, 235+y3), 1, random.uniform(0.1, 0.3))
     time.sleep(random.uniform(3.5, 4.5))
     #절전 모드
 
-    #2번 케릭
-    time.sleep(random.uniform(3.5, 4.5))
-    pag.moveTo(316+640, 213)
-    pag.drag(-100, 0, 1.5)
-    time.sleep(random.uniform(3.5, 4.5))
-    #자동 사냥 해제
-    pag.click(random.uniform(610+640, 618+640), random.uniform(53, 59), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #메뉴
-    pag.click(random.uniform(580+640, 585+640), random.uniform(145, 150), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #던전
-    pag.click(random.uniform(320+640, 340+640), random.uniform(80, 90), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #일반
-    pag.click(random.uniform(x1+640, x2+640), random.uniform(y1, y2), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #던전 선택
-    pag.click(random.uniform(425+640, 430+640), random.uniform(129, 134), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #1단계
-    pag.click(random.uniform(350+640, 370+640), random.uniform(250, 265), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #확인
-    pag.click(random.uniform(585+640, 590+640), random.uniform(240, 245), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #자동 공격
-    pag.click(15+640, 299, 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #빠른 설정 모드
-    pag.click(random.uniform(300+640, 330+640), random.uniform(215, 235), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #절전 모드
-
-    #3번 케릭
-    time.sleep(random.uniform(3.5, 4.5))
-    pag.moveTo(316+640+640, 213)
-    pag.drag(-100, 0, 1.5)
-    time.sleep(random.uniform(3.5, 4.5))
-    #자동 사냥 해제
-    pag.click(random.uniform(610+640+640, 618+640+640), random.uniform(53, 59), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #메뉴
-    pag.click(random.uniform(580+640+640, 585+640+640), random.uniform(145, 150), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #던전
-    pag.click(random.uniform(320+640+640, 340+640+640), random.uniform(80, 90), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #일반
-    pag.click(random.uniform(x1+640+640, x2+640+640), random.uniform(y1, y2), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #던전 선택
-    pag.click(random.uniform(425+640+640, 430+640+640), random.uniform(129, 134), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #1단계
-    pag.click(random.uniform(350+640+640, 370+640+640), random.uniform(250, 265), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #확인
-    pag.click(random.uniform(585+640+640, 590+640+640), random.uniform(240, 245), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #자동 공격
-    pag.click(15+640+640, 299, 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #빠른 설정 모드
-    pag.click(random.uniform(300+640+640, 330+640+640), random.uniform(215, 235), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #절전 모드
-
-    #4번 케릭
-    time.sleep(random.uniform(3.5, 4.5))
-    pag.moveTo(316, 213+400)
-    pag.drag(-100, 0, 1.5)
-    time.sleep(random.uniform(3.5, 4.5))
-    #자동 사냥 해제
-    pag.click(random.uniform(610, 618), random.uniform(53+400, 59+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #메뉴
-    pag.click(random.uniform(580, 585), random.uniform(145+400, 150+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #던전
-    pag.click(random.uniform(320, 340), random.uniform(80+400, 90+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #일반
-    pag.click(random.uniform(x1, x2), random.uniform(y1+400, y2+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #던전 선택
-    pag.click(random.uniform(425, 430), random.uniform(129+400, 134+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #1단계
-    pag.click(random.uniform(350, 370), random.uniform(250+400, 265+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #확인
-    pag.click(random.uniform(585, 590), random.uniform(240+400, 245+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #자동 공격
-    pag.click(15, 299+400, 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #빠른 설정 모드
-    pag.click(random.uniform(300, 330), random.uniform(215+400, 235+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #절전 모드
-
-    #5번 케릭
-    time.sleep(random.uniform(3.5, 4.5))
-    pag.moveTo(316+640, 213+400)
-    pag.drag(-100, 0, 1.5)
-    time.sleep(random.uniform(3.5, 4.5))
-    #자동 사냥 해제
-    pag.click(random.uniform(610+640, 618+640), random.uniform(53+400, 59+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #메뉴
-    pag.click(random.uniform(580+640, 585+640), random.uniform(145+400, 150+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #던전
-    pag.click(random.uniform(320+640, 340+640), random.uniform(80+400, 90+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #일반
-    pag.click(random.uniform(x1+640, x2+640), random.uniform(y1+400, y2+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #던전 선택
-    pag.click(random.uniform(425+640, 430+640), random.uniform(129+400, 134+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #1단계
-    pag.click(random.uniform(350+640, 370+640), random.uniform(250+400, 265+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #확인
-    pag.click(random.uniform(585+640, 590+640), random.uniform(240+400, 245+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #자동 공격
-    pag.click(15+640, 299+400, 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #빠른 설정 모드
-    pag.click(random.uniform(300+640, 330+640), random.uniform(215+400, 235+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #절전 모드
-
-    #6번 케릭
-    time.sleep(random.uniform(3.5, 4.5))
-    pag.moveTo(316+640+640, 213+400)
-    pag.drag(-100, 0, 1.5)
-    time.sleep(random.uniform(3.5, 4.5))
-    #자동 사냥 해제
-    pag.click(random.uniform(610+640+640, 618+640+640), random.uniform(53+400, 59+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #메뉴
-    pag.click(random.uniform(580+640+640, 585+640+640), random.uniform(145+400, 150+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #던전
-    pag.click(random.uniform(320+640+640, 340+640+640), random.uniform(80+400, 90+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #일반
-    pag.click(random.uniform(x1+640+640, x2+640+640), random.uniform(y1+400, y2+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #던전 선택
-    pag.click(random.uniform(425+640+640, 430+640+640), random.uniform(129+400, 134+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #1단계
-    pag.click(random.uniform(350+640+640, 370+640+640), random.uniform(250+400, 265+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #확인
-    pag.click(random.uniform(585+640+640, 590+640+640), random.uniform(240+400, 245+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #자동 공격
-    pag.click(15+640+640, 299+400, 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #빠른 설정 모드
-    pag.click(random.uniform(300+640+640, 330+640+640), random.uniform(215+400, 235+400), 1, random.uniform(0.1, 0.3))
-    time.sleep(random.uniform(3.5, 4.5))
-    #절전 모드
     print("Filedgate End")
     print(time.ctime())
+
+def fieldgateall():
+    fieldgate(320, 370, 200, 230, 0, 0)
+    fieldgate(320, 370, 200, 230, 640, 0)
+    # fieldgate(320, 370, 200, 230, 1280, 0)
+    fieldgate(320, 370, 200, 230, 0, 400)
+    fieldgate(320, 370, 200, 230, 640, 400)
+    fieldgate(320, 370, 200, 230, 1280, 400)
 
 def buyticket():
     print("Buyticket Start")
@@ -1072,7 +910,7 @@ def stockitem(x, y):
 def stockitemall():
     stockitem(0, 0)
     stockitem(640, 0)
-    stockitem(1280, 0)
+    # stockitem(1280, 0)
     stockitem(0, 400)
     stockitem(640, 400)
     stockitem(1280, 400)
@@ -1151,7 +989,7 @@ def buyportion(x, y):
 def buyportionall():
     buyportion(0, 0)
     buyportion(640, 0)
-    buyportion(1280, 0)
+    # buyportion(1280, 0)
     buyportion(0,400)
     buyportion(640, 400)
     buyportion(1280, 400)
@@ -1183,7 +1021,7 @@ schedule.every().day.at("10:23:00").do(dailycheckall)
 schedule.every().day.at("10:30:00").do(rewardget)
 schedule.every().day.at("10:37:00").do(gotodesktop1)
 schedule.every().day.at("11:25:00").do(gotodesktop2)
-schedule.every().day.at("11:26:00").do(fieldgate, x1=320, x2=370, y1=200, y2=230)
+schedule.every().day.at("11:26:00").do(fieldgateall)
 schedule.every().day.at("11:33:00").do(rewardget)
 schedule.every().day.at("11:40:00").do(gotodesktop1)
 schedule.every().day.at("20:52:00").do(gotodesktop2)
@@ -1197,7 +1035,7 @@ schedule.every().thursday.at("21:15:00").do(buyticket)
 schedule.every().saturday.at("21:15:00").do(buyticket)
 
 
-time.sleep(60*45)
+time.sleep(60*24)
 # buyticket()
 # gotodesktop2()
 # stockitemall()
@@ -1207,7 +1045,7 @@ time.sleep(60*45)
 # rewardget()
 # gotodesktop1()
 # gotodesktop2()
-fieldgate(320, 370, 200, 230)
+fieldgateall()
 # rewardget()
 # gotodesktop1()
 # gotodesktop2()
